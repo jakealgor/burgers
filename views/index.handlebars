@@ -1,0 +1,45 @@
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center" id="header">
+            <img src="/assets/image/burger.png" width="15%" alt="Good burger">
+            <h1> Good Burgers </h1>
+        </div>
+        <div class="col-md-6 text-center" class="input">
+            <div class="row">
+                {{#each burger_data}}
+                {{#unless this.devoured}}
+                <div class="col-md-6 text-center">
+                    <pre>{{this.id}}. {{this.burger_name}}
+					</pre>
+                </div>
+                <div class="col-md-6 text-center">
+                    <form class="Ate button-size">
+                        <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
+                        <button type="submit" class="btn btn-danger">Eat</button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-md-6 text-center" class="input">
+            {{#each burger_data}}
+            {{#if this.devoured}}
+            <input class="form-control eaten" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-center userInput">
+            <form action="/burgers/create" method="POST">
+            <p>Insert Burger type and hit "Devoure!"</p>
+                <input type="text" class="form-control" name="burger_name" value="devoured" id="userInputArea">
+                <button type="submit" class="btn btn-danger" id="userInputButton">Devoure!</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
