@@ -1,7 +1,7 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12 text-center" id="header">
-            <img src="/public/img/burger.png" width="15%" alt="Good burger">
+            <img src="/img/burger.png" width="15%" alt="Good burger">
             <h1> Good Burgers </h1>
         </div>
         <div class="col-md-6 text-center" class="input">
@@ -15,7 +15,7 @@
                 <div class="col-md-3 text-center">
                     <form class="Devoure button-size">
                         <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-                        <button type="submit" class="btn btn-danger">Eat</button>
+                        <button type="submit" class="btn btn-danger">Devoure</button>
                     </form>
                 </div>
                 {{/unless}}
@@ -35,9 +35,9 @@
     <div class="row">
         <div class="col-md-12 text-center userInput">
             <form action="/burgers/create" method="POST">
-            <p>Insert Burger type and hit "Devoure!"</p>
+            <p>Insert Burger type and hit "Eat!"</p>
                 <input type="text" class="form-control" name="burger_name" value="devoured" id="userInputArea">
-                <button type="submit" class="btn btn-danger" id="userInputButton">Devoure!</button>
+                <button type="submit" class="btn btn-danger" id="userInputButton">Eat!</button>
             </form>
             
         </div>
