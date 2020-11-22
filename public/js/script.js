@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".ate").on("submit", function (event) {
+    $(".Devoure").on("submit", function (event) {
         event.preventDefault();
         var burger_id = $(this).children(".burger_id").val();
         $.ajax({
