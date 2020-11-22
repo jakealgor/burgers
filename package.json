@@ -23,6 +23,5 @@
     "express-handlebars": "^5.1.0",
     "heroku": "^7.47.3",
     "mysql": "^2.18.1"
-  },
-  "devDependencies": {}
+  }
 }
