@@ -33,4 +33,4 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 * https://github.com/jakealgor/burgers
 
-* https://jakealgorgoodburgers.herokuapp.com/ 
+* https://stormy-wave-53994.herokuapp.com/
